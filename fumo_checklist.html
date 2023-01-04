@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Fumo Checklist</title>
+    <link rel="stylesheet" href="/index.css" />
+</head>
+
+<body>
+    <a href="https://github.com/Ununoctium117/fumosite">
+        <img class="github-banner" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
+    </a>
+
+    <h1>Fumo Checklist</h1>
+
+    <p id="welcome-message">
+        Welcome to the fumo checklist!
+        Use this page to track your fumo collection and share it with your friends.
+        <br>
+        Your data is saved <i>locally</i>!
+        If you clear your brower data or switch computers, your data will be lost!
+    </p>
+
+    <p id="welcome-message-sharing" class="hidden">
+        You're looking at someone else's collection!
+    </p>
+
+    <input type="checkbox" id="hide-obtained" name="hide-obtained" class="hidden checklist-control">
+    <input type="checkbox" id="hide-unobtained" name="hide-unobtained" class="hidden checklist-control">
+    <div class="checklist-controls" id="internal-controls">
+        <div>
+            <label for="hide-obtained">Hide already-collected fumos</label>
+            <label for="hide-unobtained">Hide fumos you don't own</label>
+        </div>
+        <div>
+            <span id="reset-checklist-button">⚠️ Reset checklist</span>
+            <span id="share-checklist-button">🔗 Share checklist</span>
+        </div>
+    </div>
+
+    <div class="checklist-controls hidden" id="external-controls">
+        <div>
+            <span id="save-external-checklist">💾 Overwrite your existing checklist</span>
+            <span id="restore-own-checklist">🚫 Go back to your own collection</span>
+        </div>
+    </div>
+
+    <div id="fumo-checklist">
+        <div class="checklist-character">
+            <h4>Hakurei Reimu</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-001' name='checkbox-001' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-001'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/001.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-029' name='checkbox-029' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-029'>
+                        <div class="checklist-item">
+                            <h5>Nendroid Plus</h5>
+                            <img src='img/029.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-345' name='checkbox-345' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-345'>
+                        <div class="checklist-item">
+                            <h5>Kourindou Version</h5>
+                            <img src='img/345.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-897' name='checkbox-897' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-897'>
+                        <div class="checklist-item">
+                            <h5>Version 1.5</h5>
+                            <img src='img/897.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-122' name='checkbox-122' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-122'>
+                        <div class="checklist-item">
+                            <h5>Strap - Nendroid Plus</h5>
+                            <img src='img/122.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-452' name='checkbox-452' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-452'>
+                        <div class="checklist-item">
+                            <h5>Strap - Kourindou Version</h5>
+                            <img src='img/452.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-745' name='checkbox-745' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-745'>
+                        <div class="checklist-item">
+                            <h5>Strap - Plush Strap</h5>
+                            <img src='img/745.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-009' name='checkbox-009' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-009'>
+                        <div class="checklist-item">
+                            <h5>Deka - Version 1</h5>
+                            <img src='img/009.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-739' name='checkbox-739' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-739'>
+                        <div class="checklist-item">
+                            <h5>Deka - Kourindou Version</h5>
+                            <img src='img/739.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-021' name='checkbox-021' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-021'>
+                        <div class="checklist-item">
+                            <h5>Puppet</h5>
+                            <img src='img/021.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Kirisame Marisa</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-002' name='checkbox-002' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-002'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/002.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-030' name='checkbox-030' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-030'>
+                        <div class="checklist-item">
+                            <h5>Nendroid Plus</h5>
+                            <img src='img/030.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-278' name='checkbox-278' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-278'>
+                        <div class="checklist-item">
+                            <h5>Version 2</h5>
+                            <img src='img/278.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-423' name='checkbox-423' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-423'>
+                        <div class="checklist-item">
+                            <h5>Kourindou Version</h5>
+                            <img src='img/423.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-898' name='checkbox-898' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-898'>
+                        <div class="checklist-item">
+                            <h5>Version 1.5</h5>
+                            <img src='img/898.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-123' name='checkbox-123' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-123'>
+                        <div class="checklist-item">
+                            <h5>Strap - Nendroid Plus</h5>
+                            <img src='img/123.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-453' name='checkbox-453' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-453'>
+                        <div class="checklist-item">
+                            <h5>Strap - Kourindou Version</h5>
+                            <img src='img/453.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-746' name='checkbox-746' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-746'>
+                        <div class="checklist-item">
+                            <h5>Strap - Plush Strap</h5>
+                            <img src='img/746.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-023' name='checkbox-023' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-023'>
+                        <div class="checklist-item">
+                            <h5>Deka - Version 1</h5>
+                            <img src='img/023.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-740' name='checkbox-740' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-740'>
+                        <div class="checklist-item">
+                            <h5>Deka - Kourindou Version</h5>
+                            <img src='img/740.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-022' name='checkbox-022' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-022'>
+                        <div class="checklist-item">
+                            <h5>Puppet</h5>
+                            <img src='img/022.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Izayoi Sakuya</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-004' name='checkbox-004' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-004'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/004.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-044' name='checkbox-044' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-044'>
+                        <div class="checklist-item">
+                            <h5>Nendroid Plus</h5>
+                            <img src='img/044.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-356' name='checkbox-356' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-356'>
+                        <div class="checklist-item">
+                            <h5>Kourindou Version</h5>
+                            <img src='img/356.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-inu-sakuya' name='checkbox-inu-sakuya' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-inu-sakuya'>
+                        <div class="checklist-item">
+                            <h5>Inu (Dog) Version</h5>
+                            <img src='img/inu-sakuya.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-152' name='checkbox-152' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-152'>
+                        <div class="checklist-item">
+                            <h5>Strap - Nendroid Plus</h5>
+                            <img src='img/152.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-903' name='checkbox-903' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-903'>
+                        <div class="checklist-item">
+                            <h5>Strap - Plush Strap</h5>
+                            <img src='img/903.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-853' name='checkbox-853' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-853'>
+                        <div class="checklist-item">
+                            <h5>Deka - Version 1</h5>
+                            <img src='img/853.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Remilia Scarlet</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-005' name='checkbox-005' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-005'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/005.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-105' name='checkbox-105' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-105'>
+                        <div class="checklist-item">
+                            <h5>Nendroid Plus</h5>
+                            <img src='img/105.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-364' name='checkbox-364' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-364'>
+                        <div class="checklist-item">
+                            <h5>Kourindou Version</h5>
+                            <img src='img/364.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-686' name='checkbox-686' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-686'>
+                        <div class="checklist-item">
+                            <h5>Version 1.5</h5>
+                            <img src='img/686.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-168' name='checkbox-168' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-168'>
+                        <div class="checklist-item">
+                            <h5>Strap - Nendroid Plus</h5>
+                            <img src='img/168.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-901' name='checkbox-901' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-901'>
+                        <div class="checklist-item">
+                            <h5>Strap - Plush Strap</h5>
+                            <img src='img/901.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-124' name='checkbox-124' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-124'>
+                        <div class="checklist-item">
+                            <h5>Deka - Version 1</h5>
+                            <img src='img/124.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-851' name='checkbox-851' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-851'>
+                        <div class="checklist-item">
+                            <h5>Deka - Version 1.5</h5>
+                            <img src='img/851.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Patchouli Knowledge</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-006' name='checkbox-006' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-006'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/006.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-492' name='checkbox-492' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-492'>
+                        <div class="checklist-item">
+                            <h5>Version 1.5</h5>
+                            <img src='img/492.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Alice Margatroid</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-007' name='checkbox-007' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-007'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/007.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-491' name='checkbox-491' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-491'>
+                        <div class="checklist-item">
+                            <h5>Version 1.5</h5>
+                            <img src='img/491.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Flandre Scarlet</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-008' name='checkbox-008' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-008'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/008.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-106' name='checkbox-106' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-106'>
+                        <div class="checklist-item">
+                            <h5>Nendroid Plus</h5>
+                            <img src='img/106.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-346' name='checkbox-346' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-346'>
+                        <div class="checklist-item">
+                            <h5>Version 1.5</h5>
+                            <img src='img/346.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-181' name='checkbox-181' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-181'>
+                        <div class="checklist-item">
+                            <h5>Strap - Nendroid Plus</h5>
+                            <img src='img/181.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-902' name='checkbox-902' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-902'>
+                        <div class="checklist-item">
+                            <h5>Strap - Plush Strap</h5>
+                            <img src='img/902.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-189' name='checkbox-189' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-189'>
+                        <div class="checklist-item">
+                            <h5>Deka - Version 1</h5>
+                            <img src='img/189.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-852' name='checkbox-852' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-852'>
+                        <div class="checklist-item">
+                            <h5>Deka - Version 1.5</h5>
+                            <img src='img/852.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Kochiya Sanae</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-013' name='checkbox-013' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-013'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/013.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-045' name='checkbox-045' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-045'>
+                        <div class="checklist-item">
+                            <h5>Nendroid Plus</h5>
+                            <img src='img/045.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-290' name='checkbox-290' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-290'>
+                        <div class="checklist-item">
+                            <h5>Version 2</h5>
+                            <img src='img/290.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-153' name='checkbox-153' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-153'>
+                        <div class="checklist-item">
+                            <h5>Strap - Nendroid Plus</h5>
+                            <img src='img/153.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Cirno</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-014' name='checkbox-014' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-014'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/014.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-195' name='checkbox-195' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-195'>
+                        <div class="checklist-item">
+                            <h5>Nendroid Plus</h5>
+                            <img src='img/195.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-558' name='checkbox-558' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-558'>
+                        <div class="checklist-item">
+                            <h5>Version 1.5</h5>
+                            <img src='img/558.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-559' name='checkbox-559' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-559'>
+                        <div class="checklist-item">
+                            <h5>Tanned Version</h5>
+                            <img src='img/559.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-050' name='checkbox-050' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-050'>
+                        <div class="checklist-item">
+                            <h5>Deka - Version 1</h5>
+                            <img src='img/050.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Moriya Suwako</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-015' name='checkbox-015' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-015'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/015.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Konpaku Youmu</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-039' name='checkbox-039' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-039'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/039.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-489' name='checkbox-489' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-489'>
+                        <div class="checklist-item">
+                            <h5>Version 1.5</h5>
+                            <img src='img/489.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-918' name='checkbox-918' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-918'>
+                        <div class="checklist-item">
+                            <h5>Lost Word Mysterious Sword Master Version</h5>
+                            <img src='img/918.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-920' name='checkbox-920' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-920'>
+                        <div class="checklist-item">
+                            <h5>Deka - Version 1</h5>
+                            <img src='img/920.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Saigyouji Yuyuko</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-040' name='checkbox-040' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-040'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/040.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-490' name='checkbox-490' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-490'>
+                        <div class="checklist-item">
+                            <h5>Version 1.5</h5>
+                            <img src='img/490.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-921' name='checkbox-921' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-921'>
+                        <div class="checklist-item">
+                            <h5>Deka - Version 1</h5>
+                            <img src='img/921.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Hong Meiling</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-056' name='checkbox-056' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-056'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/056.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Chen</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-080' name='checkbox-080' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-080'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/080.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-523' name='checkbox-523' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-523'>
+                        <div class="checklist-item">
+                            <h5>Version 1.5</h5>
+                            <img src='img/523.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Yakumo Ran</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-081' name='checkbox-081' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-081'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/081.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-524' name='checkbox-524' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-524'>
+                        <div class="checklist-item">
+                            <h5>Version 1.5</h5>
+                            <img src='img/524.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Yakumo Yukari</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-082' name='checkbox-082' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-082'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/082.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-525' name='checkbox-525' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-525'>
+                        <div class="checklist-item">
+                            <h5>Version 1.5</h5>
+                            <img src='img/525.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Houraisan Kaguya</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-138' name='checkbox-138' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-138'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/138.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Fujiwara no Mokou</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-139' name='checkbox-139' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-139'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/139.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Komeiji Satori</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-196' name='checkbox-196' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-196'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/196.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-808' name='checkbox-808' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-808'>
+                        <div class="checklist-item">
+                            <h5>Strap - Plush Strap</h5>
+                            <img src='img/808.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-820' name='checkbox-820' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-820'>
+                        <div class="checklist-item">
+                            <h5>Deka - Version 1</h5>
+                            <img src='img/820.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Komeiji Koishi</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-197' name='checkbox-197' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-197'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/197.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-809' name='checkbox-809' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-809'>
+                        <div class="checklist-item">
+                            <h5>Strap - Plush Strap</h5>
+                            <img src='img/809.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-821' name='checkbox-821' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-821'>
+                        <div class="checklist-item">
+                            <h5>Deka - Version 1</h5>
+                            <img src='img/821.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Reisen Udongein Inaba</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-236' name='checkbox-236' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-236'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/236.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-424' name='checkbox-424' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-424'>
+                        <div class="checklist-item">
+                            <h5>Hisouten Version</h5>
+                            <img src='img/424.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Inaba Tewi</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-237' name='checkbox-237' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-237'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/237.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Hata no Kokoro</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-310' name='checkbox-310' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-310'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/310.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Ibaraki Kasen</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-454' name='checkbox-454' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-454'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/454.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Shameimaru Aya</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-058' name='checkbox-058' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-058'>
+                        <div class="checklist-item">
+                            <h5>Nendroid Plus</h5>
+                            <img src='img/058.jpg' />
+                        </div>
+                    </label>
+                </li>
+                <input type="checkbox" id='checkbox-493' name='checkbox-493' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-493'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/493.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Himekaidou Hatate</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-494' name='checkbox-494' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-494'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/494.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Hinanawi Tenshi</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-593' name='checkbox-593' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-593'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/593.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Yorigami Shion</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-644' name='checkbox-644' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-644'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/644.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Kazami Yuuka</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-685' name='checkbox-685' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-685'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/685.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Inubashiri Momiji</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-773' name='checkbox-773' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-773'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/773.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Eirin Yagokoro</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-807' name='checkbox-807' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-807'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/807.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Rumia</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-834' name='checkbox-834' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-834'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/834.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Shiki Eiki, Yamaxanadu</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-835' name='checkbox-835' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-835'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/835.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Kawashiro Nitori</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-836' name='checkbox-836' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-836'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/836.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Yorigami Joon</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-837' name='checkbox-837' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-837'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/837.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Usami Renko</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-899' name='checkbox-899' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-899'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/899.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="checklist-character">
+            <h4>Toyosatomimi no Miko</h4>
+            <ul>
+                <input type="checkbox" id='checkbox-900' name='checkbox-900' class="hidden checklist-checkbox" />
+                <li>
+                    <label for='checkbox-900'>
+                        <div class="checklist-item">
+                            <h5>Version 1</h5>
+                            <img src='img/900.jpg' />
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        (async () => {
+            const LOCAL_STORAGE_KEY = 'CHECKLIST_STATE_V1';
+            const INU_SAKUYA_NYBBLE = 0b1010;
+            const NULL_NYBBLE = 0b1110;
+            const END_OF_ID_NYBBLE = 0b1111;
+
+            function loadLocalStorage() {
+                const data = localStorage.getItem(LOCAL_STORAGE_KEY);
+                if (data === null) {
+                    console.log('No data found for', LOCAL_STORAGE_KEY);
+                    return {
+                        'hideObtained': false,
+                        'hideUnobtained': false,
+                        'external': false,
+                        'owned': true,
+                        'fumos': [],
+                    };
+                }
+
+                return JSON.parse(data);
+            }
+
+            function saveLocalStorage(data) {
+                if (data['external']) {
+                    console.error('Refusing to save external data!');
+                    return;
+                }
+
+                localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(data));
+            }
+
+            function fumoIdFromCheckbox(checkbox) {
+                return checkbox.id.substring(9);
+            }
+
+            function generateJsonDataFromCheckboxState() {
+                let fumosOwned = [];
+                let fumosNotOwned = [];
+                for (let node of document.querySelectorAll('.checklist-checkbox')) {
+                    if (node.checked) {
+                        fumosOwned.push(fumoIdFromCheckbox(node));
+                    } else {
+                        fumosNotOwned.push(fumoIdFromCheckbox(node));
+                    }
+                }
+
+                let data = {
+                    'hideObtained': document.querySelector('#hide-obtained').checked,
+                    'hideUnobtained': document.querySelector('#hide-unobtained').checked,
+                    'external': document.querySelector('#internal-controls').classList.contains('hidden'),
+                };
+
+                if (fumosOwned.length >= fumosNotOwned.length) {
+                    data['fumos'] = fumosNotOwned;
+                    data['owned'] = false;
+                } else {
+                    data['fumos'] = fumosOwned;
+                    data['owned'] = true;
+                }
+
+                return data;
+            }
+
+            function saveCheckboxStateToLocalStorage() {
+                const data = generateJsonDataFromCheckboxState();
+                saveLocalStorage(data);
+            }
+
+            function restoreJsonDataToCheckboxes(data) {
+                document.querySelector('#hide-obtained').checked = data['hideObtained'];
+                document.querySelector('#hide-unobtained').checked = data['hideUnobtained'];
+
+                if (data['external']) {
+                    document.querySelector('#welcome-message').classList.add('hidden');
+                    document.querySelector('#welcome-message-sharing').classList.remove('hidden');
+                    document.querySelector('#internal-controls').classList.add('hidden');
+                    document.querySelector('#external-controls').classList.remove('hidden');
+                } else {
+                    document.querySelector('#welcome-message').classList.remove('hidden');
+                    document.querySelector('#welcome-message-sharing').classList.add('hidden');
+                    document.querySelector('#internal-controls').classList.remove('hidden');
+                    document.querySelector('#external-controls').classList.add('hidden');
+                }
+
+                const fumos = new Set(data['fumos']);
+                for (let checkbox of document.querySelectorAll('.checklist-checkbox')) {
+                    const id = fumoIdFromCheckbox(checkbox);
+                    // present and list is list of owned fumos: turn on
+                    // not present and list is list of unowned fumos: turn on
+                    checkbox.checked = (fumos.has(id) === data['owned']);
+                    checkbox.disabled = data['external'];
+                }
+            }
+
+            function restoreCheckboxesFromLocalStorage() {
+                const data = loadLocalStorage();
+                restoreJsonDataToCheckboxes(data);
+            }
+
+            function generateShareableJsonDataFromCheckboxState() {
+                let data = generateJsonDataFromCheckboxState();
+                data['external'] = true;
+                data['hideObtained'] = false;
+                data['hideUnobtained'] = true;
+                return data;
+            }
+
+            async function arrayToUnpaddedUrlSafeBase64(data) {
+                const url = await new Promise((r) => {
+                    const reader = new FileReader();
+                    reader.onload = () => r(reader.result);
+                    reader.readAsDataURL(new Blob([data]));
+                });
+                return url.split(',', 2)[1].replace(/\//g, '_').replace(/\+/g, '-').replace(/\=+$/, '');
+            }
+
+            // Via experimentation: this is a better compression ratio than using lz-string
+            async function compressJsonData(data) {
+                let fumoNybbles = [];
+
+                let flags = 0;
+                if (data['hideObtained']) {
+                    flags |= 0b0001;
+                }
+                if (data['hideUnobtained']) {
+                    flags |= 0b0010;
+                }
+                if (data['owned']) {
+                    flags |= 0b0100;
+                }
+                if (data['external']) {
+                    flags |= 0b1000;
+                }
+                fumoNybbles.push(flags);
+
+                for (let fumo of data['fumos']) {
+                    if (fumo === 'inu-sakuya') {
+                        fumoNybbles.push(INU_SAKUYA_NYBBLE);
+                    } else {
+                        for (let char of fumo) {
+                            fumoNybbles.push({
+                                '0': 0b0000,
+                                '1': 0b0001,
+                                '2': 0b0010,
+                                '3': 0b0011,
+                                '4': 0b0100,
+                                '5': 0b0101,
+                                '6': 0b0110,
+                                '7': 0b0111,
+                                '8': 0b1000,
+                                '9': 0b1001,
+                            }[char]);
+                        }
+                    }
+
+                    fumoNybbles.push(END_OF_ID_NYBBLE);
+                }
+
+                if (fumoNybbles.length % 2 !== 0) {
+                    fumoNybbles.push(NULL_NYBBLE);
+                }
+
+                let fumoBytes = new Uint8Array(fumoNybbles.length / 2);
+                for (let i = 0; i < fumoNybbles.length; i += 2) {
+                    fumoBytes[i / 2] = (fumoNybbles[i] << 4 | fumoNybbles[i + 1]);
+                }
+
+                return await arrayToUnpaddedUrlSafeBase64(fumoBytes);
+            }
+
+            function decompressJsonData(string) {
+                let nonUrlSafe = string.replace(/_/g, '/').replace(/-/g, '+');
+                const lenMod4 = nonUrlSafe.length % 4;
+                if (lenMod4 !== 0) {
+                    nonUrlSafe += ('===').slice(0, 4 - lenMod4);
+                }
+                const fumoBytes = Uint8Array.from(atob(nonUrlSafe), c => c.charCodeAt(0));
+
+                const fumoNybbles = [];
+                for (let byte of fumoBytes) {
+                    fumoNybbles.push(byte >>> 4);
+                    fumoNybbles.push(byte & 0x0F);
+                }
+
+                let result = {};
+                result['hideObtained'] = (fumoNybbles[0] & 0b0001) !== 0;
+                result['hideUnobtained'] = (fumoNybbles[0] & 0b0010) !== 0;
+                result['owned'] = (fumoNybbles[0] & 0b0100) !== 0;
+                result['external'] = (fumoNybbles[0] & 0b1000) !== 0;
+                fumoNybbles.shift();
+
+                let fumoIds = [];
+                let inProgressId = '';
+                for (let nybble of fumoNybbles) {
+                    if (nybble === END_OF_ID_NYBBLE) {
+                        fumoIds.push(inProgressId);
+                        inProgressId = '';
+                    } else if (nybble === INU_SAKUYA_NYBBLE) {
+                        inProgressId = 'inu-sakuya';
+                    } else if (nybble === NULL_NYBBLE) {
+                        continue;
+                    } else {
+                        inProgressId += [
+                            '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
+                        ][nybble];
+                    }
+                }
+                result['fumos'] = fumoIds;
+                return result;
+            }
+
+            // Add event listeners
+            document.querySelector('#reset-checklist-button').addEventListener('click', () => {
+                if (confirm('Are you sure?')) {
+                    localStorage.clear();
+                    restoreCheckboxesFromLocalStorage();
+                }
+            });
+
+            document.querySelector('#share-checklist-button').addEventListener('click', async () => {
+                const shareableData = await compressJsonData(generateShareableJsonDataFromCheckboxState());
+                const shareableUrl = new URL('/', location.href);
+                shareableUrl.hash = shareableData;
+                try {
+                    await navigator.clipboard.writeText(shareableUrl.toString());
+                    alert('Sharing link copied to clipboard!');
+                } catch(err) {
+                    alert('Failed to copy sharing link!');
+                    console.err(err);
+                }
+            });
+
+            document.querySelector('#save-external-checklist').addEventListener('click', () => {
+                if (confirm('Are you sure?')) {
+                    const data = generateJsonDataFromCheckboxState();
+                    data['external'] = false;
+                    saveLocalStorage(data);
+                    restoreCheckboxesFromLocalStorage();
+                }
+            });
+
+            document.querySelector('#restore-own-checklist').addEventListener('click', () => {
+                restoreCheckboxesFromLocalStorage();
+            });
+
+            for (let selector of ['.checklist-checkbox', '#hide-obtained', '#hide-unobtained']) {
+                for (let element of document.querySelectorAll(selector)) {
+                    element.addEventListener('change', () => {
+                        saveCheckboxStateToLocalStorage();
+                    });
+                }
+            }
+
+            // Check for a sharing link
+            if (location.hash.length > 0) {
+                const data = decompressJsonData(location.hash.substring(1));
+                restoreJsonDataToCheckboxes(data);
+
+                let replacementUrl = new URL(location.href);
+                replacementUrl.hash = '';
+                history.replaceState(null, '', replacementUrl.toString());
+            } else {
+                restoreCheckboxesFromLocalStorage();
+            }
+        })();
+    </script>
+</body>
+</html>
