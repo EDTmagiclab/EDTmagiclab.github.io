@@ -1,4 +1,4 @@
-#永远幻想矩阵Dream Martix
+# 永远幻想矩阵Dream Martix
 
 # 欢迎来到永远幻想矩阵社团官网！
 
