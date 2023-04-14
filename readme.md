@@ -63,3 +63,5 @@ QQ群聊：760937257
 5.您不得在您的分发版本中嵌入有害软件
 
 6.此mod为东方project二次创作，使用此mod的一切作品同样视为东方project二次创作，请遵循《东方project使用规定案》
+
+<style> @import url('./styles.css?v=20220712.2'); </style>
