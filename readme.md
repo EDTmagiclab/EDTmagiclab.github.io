@@ -1,6 +1,3 @@
-# 永远幻想矩阵
-DreamMatrix
-
 # 欢迎来到永远幻想矩阵社团官网！
 
 ## 关于我们
@@ -16,6 +13,14 @@ HuggingFace地址（准备弃用）：https://huggingface.co/8EEirin/TouHouEncha
 civit AI地址 ：https://civitai.com/user/DreamMatrix
 
 ### ~~天津黄地达智乐团（已弃用）~~
+
+### 东方物品Mod
+
+Fabric 1.19.2版本的minecraft mod，由Mcreator制作，服务器/客户端均可使用，Github仓库：https://github.com/EDTmagiclab/TouHouThings
+
+### 友情链接：起源：东方project附加包
+
+Fabric 1.18/1.19版本的minecraft mod，我们对其进行了了汉化工作，Github仓库：https://github.com/Maxmani/touhou-origins
 
 ## 关注我们
 
@@ -42,3 +47,19 @@ QQ群聊：760937257
 5.我们不支持也不鼓励您使用我们的模型生成NSFW内容，生成NSFW内容造成的任何法律后果与本社团无关
 
 6.东方project角色模型系列中角色版权归属上海爱丽丝幻乐团所有，使用时除遵循本eula还应遵循《东方project使用规定案》
+
+# 永远幻想矩阵社团东方物品Mod最终用户许可协议（EULA）
+
+当您在您的游戏中安装此Mod，即代表您同意我们的EULA
+
+1.您可以在合法范围内任意修改此mod而不需要征得我们的同意
+
+2.您可以在整合包中使用此mod而不需要特别许可
+
+3.您不得将此mod用于营利性服务器
+
+4.您不得将此mod用于创作违反法律法规的内容
+
+5.您不得在您的分发版本中嵌入有害软件
+
+6.此mod为东方project二次创作，使用此mod的一切作品同样视为东方project二次创作，请遵循《东方project使用规定案》
