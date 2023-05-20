@@ -30,7 +30,7 @@ h1 a {
   height: 0;
 }
 h1:after {
-  content: "DreamMatrix";
+  content: "⭐";
 }
 
 .markdown-body {
