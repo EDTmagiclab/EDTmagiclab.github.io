@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	「2024年台历」的评论	</title>
+	<atom:link href="/index.php/2024/05/25/2024%E5%B9%B4%E5%8F%B0%E5%8E%86/feed/" rel="self" type="application/rss+xml" />
+	<link>/index.php/2024/05/25/2024%e5%b9%b4%e5%8f%b0%e5%8e%86/</link>
+	<description></description>
+	<lastBuildDate>Wed, 05 Jun 2024 06:21:02 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5.5</generator>
+</channel>
+</rss>
